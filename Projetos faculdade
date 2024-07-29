@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+float nota[20];
+float media,soma,maior;
+int cont;
+   maior=0.0;
+   soma=0.0;
+for(cont=0;cont<5;cont++)
+{
+     printf("enter the grade %d\n",cont+1);
+     scanf("%f",&nota[cont]);
+     soma+=nota[cont];
+if(nota[cont]>maior)
+{
+     maior=nota[cont];
+}
+
+}
+        media=soma/5;
+  
+  printf("soma: %2.f\n",soma);
+  
+  printf("maior: %2.f\n",maior);
+   
+  printf("media: %2.f\n",media);
+
+
+return 0;
+}
